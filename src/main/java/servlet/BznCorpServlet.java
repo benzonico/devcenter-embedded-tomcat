@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(
         name = "MyServlet", 
-        urlPatterns = {"/hello"}
+        urlPatterns = {"/smallmartin"}
     )
 public class BznCorpServlet extends HttpServlet {
 
@@ -24,7 +24,7 @@ public class BznCorpServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         ServletOutputStream out = resp.getOutputStream();
-        out.write("hello to my first heroku servlet".getBytes());
+        out.write("Salut Martin !".getBytes());
         out.flush();
         out.close();
     }
